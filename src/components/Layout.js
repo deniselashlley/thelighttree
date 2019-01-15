@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from '../components/Header'
-import './all.sass'
+import '../css/all.scss'
 
 const TemplateWrapper = ({ children }) => (
   <StaticQuery
