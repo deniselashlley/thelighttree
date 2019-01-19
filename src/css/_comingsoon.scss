@@ -24,8 +24,11 @@ body {
     content:'';
     position: absolute;
     width: 100%;
-    height: 900px;
     background-color: rgba(0,0,0,0.25);
+
+    @include respond-to(medium-screen) {
+      height: 900px;
+    }
   }
 
   .coming-soon {
