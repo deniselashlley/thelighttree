@@ -26,6 +26,7 @@ body {
     position: absolute;
     width: 100%;
     background-color: rgba(0,0,0,0.25);
+    min-height: 600px;
 
     @include respond-to(medium-screen) {
       height: 900px;
