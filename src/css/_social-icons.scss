@@ -1,0 +1,43 @@
+
+.social-icons {
+  display: flex;
+  padding: 0.5rem 0.75rem;
+  margin-top: 1.8em;
+
+  .social-icons--item {
+    margin-right: 0.5em;
+    height: 25px;
+
+    .icon-link {
+      display: block;
+
+    .icon {
+      width: 25px;
+      height: 25px;
+
+      &.tele-icon {
+        background: url(../img/icons/phone.svg) center no-repeat;
+        background-size: contain;
+      }
+
+      &.email-icon {
+        background: url(../img/icons/email.svg) center no-repeat;
+        background-size: contain;
+      }
+
+      &.icon-instagram {
+        background: url(../img/icons/instagram.svg) center no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    span {
+      @include visuallyhidden;
+    }
+   }
+  }
+}

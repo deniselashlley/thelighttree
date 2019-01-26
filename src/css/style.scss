@@ -1,6 +1,18 @@
 @import "./all";
 
-@import "./fonts";
 @import "./variables";
 @import "./mixin";
-@import "./comingsoon";
+@import "./header";
+@import "./footer";
+@import "./social-icons";
+
+@import "/pages/home";
+
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+}

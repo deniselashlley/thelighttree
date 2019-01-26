@@ -2,8 +2,9 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
 
-// import Header from '../components/Header'
-import ComingSoon from '../components/ComingSoon'
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import HomeBanner from '../components/HomeBanner';
 import '../css/style.scss'
 
 const TemplateWrapper = ({ children }) => (
@@ -37,9 +38,10 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
-        <ComingSoon />
-       {/* <Header />
-        <div>{children}</div> */}
+        <Header />
+        <HomeBanner />
+        <main>{children}</main>
+        <Footer />
       </div>
     )}
   />
