@@ -1,0 +1,23 @@
+.footer {
+  background-color: $black-haze;
+  padding: 1em;
+  
+  .container {
+      display: flex; 
+      justify-content: space-between;
+      align-items: center;
+  }
+  .copy-text {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+
+  .member-logo {
+    width: 100px;
+    img {
+      border: 0;
+      object-fit: contain;
+    }
+  }
+ 
+}

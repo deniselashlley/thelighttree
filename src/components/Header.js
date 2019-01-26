@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
 import logo from '../img/logo.svg'
+import SocialContainer from '../components/socialContainer';
 
 const Navbar = class extends React.Component {
 
@@ -35,7 +35,7 @@ const Navbar = class extends React.Component {
     <div className="container">
       <div className="navbar-brand">
         <Link to="/" className="navbar-item" title="Logo">
-          <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+          <img src={logo} alt="The Light Tree" title="Home" style={{ width: '80px' }} />
         </Link>
         {/* Hamburger menu */}
         <div className="navbar-burger burger" data-target="navMenu">
@@ -59,20 +59,11 @@ const Navbar = class extends React.Component {
           Form Examples
         </Link>
       </div>
-      <div className="navbar-end has-text-centered">
-        <a
-          className="navbar-item"
-          href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span className="icon">
-            <img src={github} alt="Github" />
-          </span>
-        </a>
-      </div>
-      </div>
     </div>
+    <div className="navbar-social has-text-centered">
+      <SocialContainer />
+    </div>
+  </div>
   </nav>
   )}
 }
