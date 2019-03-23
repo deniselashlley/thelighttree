@@ -1,48 +1,67 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from "gatsby"
+import React from "react";
+import Helmet from "react-helmet";
+import { graphql } from "gatsby";
 
-// import Header from '../components/Header'
+import "../styles";
+// import { Navbar } from "../components/Navbar";
+// import { Footer } from "../components/Footer";
 import ComingSoon from '../components/ComingSoon'
-import '../css/style.scss'
 
-const TemplateWrapper = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query HeadingQuery {
-          site {
-            siteMetadata {
-              title,
-              description,
+const TemplateWrapper = ({ footerData = null, navbarData = null, children }) => (
+  <div>
+    <Helmet>
+      <html lang="en" />
+      <meta name="keywords" content="pranayama, asana, transformation, healthier, happier, wellbeing, union, connection, awareness, practices,  self-enquiry, Sanskrit" />
+    </Helmet>
+    <ComingSoon />
+    {/* <Navbar data={navbarData} />
+    <main>{children}</main>
+<Footer data={footerData} /> */}
+  </div>
+);
+
+export const query = graphql`
+  fragment LayoutFragment on Query {
+    footerData: allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "footer" } } }) {
+      edges {
+        node {
+          id
+          frontmatter {
+            copyrightText
+            logoImage {
+              image
+              imageAlt
+              imageLink
             }
           }
         }
-    `}
-    render={data => (
-      <div>
-        <Helmet>
-          <html lang="en" />
-          <title>{data.site.siteMetadata.title}</title>
-          <meta name="description" content={data.site.siteMetadata.description} />
-          
-          <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
-	        <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32" />
-	        <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16" />
-	
-	        <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ff4400" />
-	        <meta name="theme-color" content="#fff" />
+      }
+    }
+    navbarData: allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "navbar" } } }) {
+      edges {
+        node {
+          id
+          frontmatter {
+            logoImage {
+              image
+              imageAlt
+            }
+            menuItems {
+              label
+              linkType
+              linkURL
+            }
+            socialLinks {
+              label
+              linkURL
+              hiddenText
+              type
+            }
+          }
+        }
+      }
+    }
+  }
+`;
 
-	        <meta property="og:type" content="business.business" />
-          <meta property="og:title" content={data.site.siteMetadata.title} />
-          <meta property="og:url" content="/" />
-          <meta property="og:image" content="/img/og-image.jpg" />
-        </Helmet>
-        <ComingSoon />
-       {/* <Header />
-        <div>{children}</div> */}
-      </div>
-    )}
-  />
-)
-
-export default TemplateWrapper
+export default TemplateWrapper;

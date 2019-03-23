@@ -1,0 +1,35 @@
+/* media */
+$image-path: "../img/";
+
+$small-screen:24em;//320px;
+$medium-screen:46.8em;//768px;
+$large-screen:50em; // 992px;
+$xl-large-screen:73em;
+
+$body-dark: #4c4c4c;
+
+$navbar-height: 90px;
+$container-padding: 20px;
+$section-padding: 80px;
+$section-padding-mobile: 40px;
+$container-width: 1200px;
+$transition-duration: 250ms;
+$footer-height: 500px;
+
+
+$montserrat: 'Montserrat', sans-serif;
+
+$white: #fff;
+$green: rgba(27, 153, 139, 1);
+$purple: rgba(109, 70, 107, 1);
+$black-haze: rgba(248, 248, 246, 1);
+$abbey:#676767;
+$storm-grey:#6b6e78;
+$american-silver: #cecece;
+$yellow: rgba(251, 204, 47, 1);
+$light-grey: #9e9e9e;
+$hoverColor: rgba(227, 197, 103, 1);
+$golden-apricot: #e0a458;
+
+$highlight: $golden-apricot;
+$background-light: $white;

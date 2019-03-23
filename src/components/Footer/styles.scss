@@ -1,0 +1,49 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+
+.footer {
+  background-color: $green;
+  padding: 1em;
+  color: $white;
+  
+  .container {
+       text-align: center;
+
+      @include respond-to("medium") {
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+      }
+  }
+  .copy-text {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+
+  .member-logo {
+    margin-top: 15px;
+
+    @include respond-to("medium") {
+      display: flex; 
+      justify-content: space-between;
+      align-items: center;
+      width: 300px;
+      margin-top: 0;
+    }
+
+    span {
+      font-size:1.0rem;
+      display: block;
+    }
+
+    img {
+      width: 50px;
+      border: 0;
+      object-fit: contain;
+    }
+  }
+ 
+}
+
