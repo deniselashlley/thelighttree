@@ -1,0 +1,128 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+
+.hero-banner {
+  position: relative;
+  background: url(../img/banner-01.jpg) center 55% no-repeat;
+  background-size: cover;
+  height: 380px;
+  margin-bottom: 40px;
+
+  @include respond-to("medium") {
+    height: 720px;
+    background-position: center 50%;
+    margin-bottom: 100px;
+  }
+
+  ul {
+    position: relative;
+    list-style:circle !important;
+    list-style-type: disc;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 40;
+    top: 25%;
+    margin: 0 auto;
+    max-width: 90%;
+
+    @include respond-to("medium") {
+      top: 50%;
+    }
+
+    li {
+      position: relative;
+      display: block;
+      font-size: 1.9rem;
+      font-weight: 400;
+      margin: 0 0.5em 1em;
+      color: $white;
+
+      @include respond-to("medium") {
+        font-size: 3.8rem;
+        display: inline-block;
+      }
+
+      &:after {
+        position: absolute;
+        top: -34px;
+        left: -25px;
+        font-size: 58px;
+        display: inline-block;
+      }
+    }
+
+  }
+
+  .down-link{
+    position: absolute;
+    top: 75%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    background: url(../img/icons/arrow.svg) center no-repeat;
+    background-size: contain;
+
+    @include respond-to("medium") {
+      width: 50px;
+      height: 50px;
+      display:block;
+    }
+
+    span {
+      @include visuallyhidden;
+    }
+  }
+}
+
+.section-block {
+  padding-bottom: 80px;
+  //background-color: $yellow;
+
+  &:nth-child(even) {
+    background-color: $black-haze;
+  }
+  .quote {
+    // background-color: $green;
+    color: $green;
+    font-size: 1.3rem;
+    text-align: center;
+    max-width: 41em;
+    margin: 2em auto 3em;
+  }
+
+  .section-title {
+    text-align: center;
+    margin-bottom: 28px;
+  }
+
+  .container-row {
+    position: relative;
+
+    @include respond-to("medium") {
+      display: flex;
+    }
+
+    .block {
+      align-items: left;
+      width: 100%;
+      margin-bottom: 18px;
+
+      @include respond-to("medium") {
+        max-width: 50%;
+        padding-right: 1em;
+        margin-right: 1em;
+      }
+
+      &.block-context {
+        @include respond-to("medium") {
+          padding-left: 40px;
+        }
+      }
+    }
+    
+  }
+
+  } 

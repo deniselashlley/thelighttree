@@ -1,19 +1,39 @@
 ---
-templateKey: 'about-page'
-path: /about
-title: About our values
+templateKey: about-page
+title: About yoga
+mainImage:
+  image: /img/AdobeStock_235341077_Preview.jpeg
+  imageAlt: group of yoga
+seo:
+  browserTitle: The Light Tree | About yoga
+  description: >-
+    Yoga refers to both the state of connection and the techniques and practices
+    used to connect.
+  title: About yoga
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+Yoga translates as Yoke or Union in ancient Sanskrit meaning to connect. This refers to both the state of connection and the techniques and practices used to connect. The practice of Yoga dates back thousands of years and is known to originate from ancient India but has also been found in ancient Africa and the far-east. The system of Yoga is founded in ancient wisdom that forms a guide of practices to help you access a deeper level of awareness and connection leading to a healthier and happier, more balanced and fulfilled life. 
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+The most commonly known form of Yoga is Asana, the postures, however Yoga also involves breathing and mediation practices and observations for daily life. The practice of Yoga is not an all-inclusive one-size-fits-all approach so you begin with your own personal intention exploring and adopting the practices that work for you at any one time and in this way it becomes your individual practice.
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+* ![](/img/abdomen-active-activity-396133.jpg)
+  
+  Improves strength and flexibility, weight reduction/loss, improved digestion, balance metabolic, nervous and endocrine systems.
+* ![](/img/AdobeStock_95680960.jpg)
+  
+  Helps to uplift your mood, reduce stress, fight depression, manage anxiety, improve mental clarity, emotional balance and supports better sleep.
+* ![](/img/alone-balance-beautiful-1574647.jpg)
+  
+  Improves mind-body connection, encourages self-acceptance, self-control and a more positive outlook to life.
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
+A regular Yoga practice improves your physical, mental and emotional health and wellbeing
 
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+If you are interested in finding out more about Yoga here are some useful sources
+
+Follow - [https://www.yogajournal.com/ 
+](https://www.yogajournal.com/)
+
+Read – Light on Yoga by B.K.S Iyengar, The Untethered Soul by Michael A. Singer
+
+Watch - [On Yoga on Netflix](https://www.netflix.com/title/80187188)
+
+##

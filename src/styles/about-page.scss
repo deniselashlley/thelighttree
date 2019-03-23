@@ -1,0 +1,44 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.about {
+
+  p {
+    strong {
+      display: block;
+      font-weight: 400;
+    }
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 2.5em 0;
+
+    li {
+      margin: 0;
+      width: 20em;
+      padding: 1em;
+      margin-bottom: 1em;
+      vertical-align: top;
+
+      img {
+        height: 200px;
+        max-width: 100%;
+      }
+      
+      @include respond-to("medium") {
+        //width: 350px;
+        border-bottom: none;
+        min-height: 100px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+        border-right: none;
+      }
+    }
+  }
+}
+

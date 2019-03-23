@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="999px" height="583px" viewBox="0 0 999 583" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="83px" height="51px" viewBox="0 0 83 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-    <title>path2993</title>
+    <title>Shape</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Angle_down_font_awesome" fill="#FFFFFF" fill-rule="nonzero">
-            <g id="g2991" transform="translate(499.542380, 291.050800) scale(-1, 1) rotate(-180.000000) translate(-499.542380, -291.050800) translate(0.542380, 0.050800)">
-                <path d="M998,499 C998,490.333333 994.666667,482.666667 988,476 L522,10 C515.333333,3.33333333 507.666667,0 499,0 C490.333333,0 482.666667,3.33333333 476,10 L10,476 C3.33333333,482.666667 0,490.333333 0,499 C0,507.666667 3.33333333,515.333333 10,522 L60,572 C66.6666667,578.666667 74.3333333,582 83,582 C91.6666667,582 99.3333333,578.666667 106,572 L499,179 L892,572 C898.666667,578.666667 906.333333,582 915,582 C923.666667,582 931.333333,578.666667 938,572 L988,522 C994.666667,515.333333 998,507.666667 998,499 Z" id="path2993"></path>
-            </g>
+        <g id="Asset-1" fill="#FFFFFF" fill-rule="nonzero">
+            <polygon id="Shape" points="82.85 9.18 50.59 41.6 41.45 50.78 32.3 41.61 0 9.18 9.16 0 41.45 32.41 73.69 0.01 82.49 8.83"></polygon>
         </g>
     </g>
 </svg>

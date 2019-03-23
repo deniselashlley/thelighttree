@@ -1,24 +1,16 @@
 backend:
   name: git-gateway
   branch: master
+  accept_roles: #optional - accepts all users if left out
+    - admin
+    - editor
 
 media_folder: static/img
 public_folder: /img
 
-collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "src/pages/blog"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
+display_url: https://www.thelighttreeyoga.co.uk/
 
+collections:
   - name: "pages"
     label: "Pages"
     files:
@@ -26,20 +18,266 @@ collections:
         label: "About"
         name: "about"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/products/index.md"
-        label: "Products Page"
-        name: "products"
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page" }
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Main Image",
+              name: "mainImage",
+              widget: "object",
+              fields:
+                [
+                  { label: "Image", name: "image", widget: "image" },
+                  { label: "Image Description", name: "imageAlt", widget: "string" },
+                ],
+            }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: "SEO & Meta",
+              name: "seo",
+              widget: "object",
+              fields:
+                [
+                  { label: "Browser Tab Title", name: "browserTitle", widget: "string"},
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Description", name: "description", widget: "string" },
+                ],
+            }
+      - file: "src/pages/home/index.md"
+        label: "Home"
+        name: "home"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Description, name: description, widget: string}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
-          - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
-          - {label: Full_image, name: full_image, widget: image}
-          - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "home-page" }
+          - { 
+              label: "Banner Text", 
+              name: "bannerText", 
+              widget: "list",
+              fields: [
+                {label: "Item Text", name: "itemText", widget: "string"},
+              ],
+            }
+          - {
+              label: "SEO & Meta",
+              name: "seo",
+              widget: "object",
+              fields:
+                [
+                  { label: "Browser Tab Title", name: "browserTitle", widget: "string"},
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Description", name: "description", widget: "string" },
+                ],
+            }
+      - file: "src/pages/classes/index.md"
+        label: "Classes"
+        name: "classes"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "classes-page" }
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Main Image",
+              name: "mainImage",
+              widget: "object",
+              fields:
+                [
+                  { label: "Image", name: "image", widget: "image" },
+                  { label: "Image Description", name: "imageAlt", widget: "string" },
+                ],
+            }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: "SEO & Meta",
+              name: "seo",
+              widget: "object",
+              fields:
+                [
+                  { label: "Browser Tab Title", name: "browserTitle", widget: "string"},
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Description", name: "description", widget: "string" },
+                ],
+            }
+      - file: "src/pages/teachings/index.md"
+        label: "Teachings"
+        name: "teachings"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "teaching-page" }
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Main Image",
+              name: "mainImage",
+              widget: "object",
+              fields:
+                [
+                  { label: "Image", name: "image", widget: "image" },
+                  { label: "Image Description", name: "imageAlt", widget: "string" },
+                ],
+            }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: "SEO & Meta",
+              name: "seo",
+              widget: "object",
+              fields:
+                [
+                  { label: "Browser Tab Title", name: "browserTitle", widget: "string"},
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Description", name: "description", widget: "string" },
+                ],
+            }
+  - name: "sections"
+    label: "Sections"
+    files:
+      - file: "src/pages/navbar/index.md"
+        label: "Navbar"
+        name: "navbar"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "navbar" }
+          - {
+              label: "Menu Items",
+              name: "menuItems",
+              widget: "list",
+              fields:
+                [
+                  { label: "Label", name: "label", widget: "string" },
+                  { label: "Link Type", name: "linkType", widget: "select", options: ["internal", "external", "hash"] },
+                  { label: "Link URL", name: "linkURL", widget: "string", hint: "Use a relative URL (e.g. /about) if the link is an internal link." },
+                ],
+            }
+          - {
+              label: "Social Items",
+              name: "socialLinks",
+              widget: "list",
+              fields:
+                [
+                  { label: "Label", name: "label", widget: "string" },
+                  { label: "Social Type", name: "type", widget: string },
+                  { label: "Social Link", name: "linkURL", widget: string },
+                  { label: "Social Title", name: "hiddenText", widget: string }
+                ],
+            }
+      - file: "src/pages/footer/index.md"
+        label: "Footer"
+        name: "footer"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "footer" }
+          - { label: "Copyright Copy", name: "copyrightText", widget: "string"}
+          - {
+              label: "Logo Image & Tagline",
+              name: "logoImage",
+              widget: "object",
+              fields:
+                [
+                  { label: "Image", name: "image", widget: "image" },
+                  { label: "Image Description", name: "imageAlt", widget: "string" },
+                  { label: "ImageLink", name: "imageLink", widget: "string"}
+                ],
+            }
+      - file: "src/pages/introduction/index.md"
+        label: "Introduction"
+        name: "introduction"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "introduction" }
+          - { label: "Title", name: "title", widget: "text"}
+          - { label: "Content", name: "content", widget: "markdown" }
+          - { label: "Quote", name: "quote", widget: "text" }
+          - { label: "Image", name: "image", widget: "image"}
+          - { label: "Highlighted Text", name: "highlightedText", widget: "text"}
+          - { 
+              label: "Page Link", 
+              name: "pageLink", 
+              widget: "object",
+              fields: [
+                { label: "Link", name: "link", widget: "string" },
+                { label: "Label", name: "label", widget: "string" },
+              ]
+            }
+      - file: "src/pages/mystory/index.md"
+        label: "My Story"
+        name: "mystory"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "my-story" }
+          - { label: "Title", name: "title", widget: "string"}
+          - { label: "Content", name: "content", widget: "markdown" }
+          - { label: "Quote", name: "quote", widget: "string" }
+          - { 
+              label: "Page Link", 
+              name: "pageLink", 
+              widget: "object",
+              fields: [
+                { label: "Link", name: "link", widget: "string" },
+                { label: "Label", name: "label", widget: "string" },
+              ]
+            }
+      - file: "src/pages/contact/index.md"
+        label: "Contact"
+        name: "contact"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "contact" }
+          - { label: "Title", name: "title", widget: "string"}
+          - { 
+              label: "Contact List", 
+              name: "contactList", 
+              widget: "list", 
+              fields: [
+                { label: "Sub Heading", name: "subHeading", widget: "string" },
+                { label: "Link", name: "link", widget: "string" },
+                { label: "Text", name: "text", widget: "string" }
+              ]
+            }
+      - file: "src/pages/testimonials/index.md"
+        label: "Testimonials"
+        name: "testimonials"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "testimonials" }
+          - { label: "Title", name: "title", widget: "string"}
+          - {
+              label: "Testimonial List", 
+              name: "testimonialList",
+              widget: "list",
+              fields: [
+                { label: "description", name: "description", widget: "string" },
+                { label: "author", name: "author", widget: "string" }
+              ] 
+            }
+      - file: "src/pages/services/index.md"
+        label: "Services"
+        name: "service"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "services" }
+          - { label: "Title", name: "title", widget: "string"}
+          - { 
+              label: "Service List", 
+              name: "serviceList", 
+              widget: "list",
+              fields: [
+                { label: "Title", name: "title", widget: "string"},
+                { label: "Description", name: "description", widget: "text"},
+                { label: "Image", name: "image", widget: "image"},
+                { label: "Label", name: "Label", widget: "string"},
+                { label: "Link", name: "link", widget: "string"}
+              ]
+            } 
+      - file: "src/pages/schedule/index.md"
+        label: "Schedule"
+        name: "schedule"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "schedule" }
+          - { label: "Title", name: "title", widget: "string"}
+          - { label: "Class Heading", name: "classHeading", widget: "string"}
+          - { label: "Events Heading", name: "eventsHeading", widget: "string"}
+          - {
+              label: "Schedule Section",
+              name: "scheduleSection",
+              widget: "list",
+              fields: [
+                { label: "Title", name: "title", widget: "string"},
+                { label: "Body", name: "body", widget: "markdown" }
+              ]
+            }
+          - { 
+              label: "Page Link", 
+              name: "pageLink", 
+              widget: "object",
+              fields: [
+                { label: "Link", name: "link", widget: "string" },
+                { label: "Label", name: "label", widget: "string" },
+              ]
+            }
