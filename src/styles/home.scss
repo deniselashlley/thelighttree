@@ -24,10 +24,10 @@
     z-index: 40;
     top: 25%;
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 55em;
 
     @include respond-to("medium") {
-      top: 50%;
+      top: 36%;
     }
 
     li {
