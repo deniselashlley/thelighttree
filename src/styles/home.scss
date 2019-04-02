@@ -79,13 +79,11 @@
 
 .section-block {
   padding-bottom: 80px;
-  //background-color: $yellow;
 
-  &:nth-child(even) {
-    background-color: $black-haze;
+  &:nth-child(odd) {
+    background-color: $light-green;
   }
   .quote {
-    // background-color: $green;
     color: $green;
     font-size: 1.3rem;
     text-align: center;
