@@ -2,7 +2,7 @@
 templateKey: my-story
 title: My Story
 content: >-
-  I have been a practitioner of Yoga since 2002 and began teaching Yoga in since
+  I have been a practitioner of Yoga since 2002 and began teaching Yoga in
   2015. 
 
   I discovered Yoga in a time of transition while I was ending a 9 year
@@ -69,7 +69,7 @@ quote: >-
   “Have you been ignoring or missing out on Life’s attempts to wake you up to
   your true self?“
 pageLink:
-  label: More on teaching philosophy
+  label: 'More about my teaching '
   link: /teachings
 ---
 
