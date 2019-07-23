@@ -2,7 +2,7 @@
 templateKey: schedule
 title: Schedule
 classHeading: Classes Timetable
-eventsHeading: Workshop & Event
+eventsHeading: Workshops & Events
 scheduleSection:
   - body: "**Soulful Sistahood: The Warrior Heart of the Goddess**\n\n**Date**: SUN 28th JULY 2019\\\n**Time**: 15:00-17:30\\\n**Venue**: The Garden Room, The Granville, \r\r140 Carlton Vale, \r\rLondon, \r\rNW6 5HE\n\n[Find more info and tickets here](https://www.eventbrite.co.uk/e/soulful-sistahood-the-warrior-heart-of-the-goddess-tickets-64225049853?aff=eac2) \n\nThe next SOULFUL SISTAHOOD is coming up later this month. On Sunday 28th we come together again in a circle of sisters to connect with and celebrate our womanhood in all it’s power.\r\r\r\r\n\nThis workshop is all about connecting with our inner Goddess and exploring her warrior heart to discover how we can identify and then lovingly slay those beliefs and behaviours that are holding us back from living in our full power.\r\r\n\nExpect some Yoga practices, discussion, personal reflection, intention setting and journaling. You will leave with some tools that will help you bring more awareness and balance into your life. All levels welcome, no previous Yoga experience necessary.\r\n\n\r\n\nIf you came to the last event you will know that these circles are powerful, I really hope you can make it. Spread the word."
     title: THIS MONTH
