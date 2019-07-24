@@ -63,8 +63,9 @@ content: >-
 
 
   I now realise that, on many occasions in my past, life had been attempting to
-  ‘wake me up’ to mySelf, to connect me, in a more intuitive way, to the innate
-  ability \[that we all share] to create my life in my vision.
+  ‘wake me up’ to mySelf, to connect me, in a more intuitive and soulful way to
+  the innate ability \[that we all share] to create my life in my vision and
+  aligned to my purpose.
 quote: >-
   “Have you been ignoring or missing out on Life’s attempts to wake you up to
   your true self?“
